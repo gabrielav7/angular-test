@@ -1,0 +1,28 @@
+.card-header {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.card-title{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    opacity: .6;
+}
+
+b {
+    color: #D5333E;
+}
+
+.splitter-underline{
+    width: 95px;
+    margin: auto;
+    color: #fff;
+    margin-bottom: 25px;
+    opacity: .8;
+}

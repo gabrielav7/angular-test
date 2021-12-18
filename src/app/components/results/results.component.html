@@ -1,0 +1,22 @@
+<div *ngIf="rowData && rowData.length" class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <h5 class="card-header">Results</h5>
+            <hr class="splitter-underline">
+            <h5 class="card-title">Displaying <b>{{rowData.length}}</b> results </h5>
+            <div class="card-body">
+                <ag-grid-angular 
+                style="height:340px;width:500px;border-radius:34px;" 
+                class="ag-theme-alpine-dark" 
+                [rowData]="rowData"
+                [columnDefs]="columnDefs" 
+                [defaultColDef]="defaultColDef" 
+                [pagination]="true" 
+                [paginationPageSize]="9">
+                </ag-grid-angular>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
