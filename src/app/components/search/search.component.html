@@ -7,13 +7,13 @@
                 <hr class="splitter-underline">
                 <div class="card-body">
                     <h5 class="card-title">Login</h5>
-                    <input type="text" class="form-control" placeholder="please enter your login name..." name="loginInput" id="loginInput" [(ngModel)]="searchInput"
+                    <input type="text" class="form-control" placeholder="username..." name="loginInput" id="loginInput" [(ngModel)]="modelValue"
                         #loginInput>
                         <div class="no-value">
-                            <span *ngIf="!searchInput" class="error-text">Please enter a valid Login value</span>
+                            <span *ngIf="!modelValue" class="error-text">Please enter a valid Login value</span>
                         </div>                        
                     <button type="button" class="btn btn-primary submit-button"
-                        (click)="onSubmit(loginInput.value)" [disabled]="!searchInput">Submit</button>
+                        (click)="onSubmit(loginInput.value)" [disabled]="!modelValue">Submit</button>
                 </div>
             </div>
         </div>

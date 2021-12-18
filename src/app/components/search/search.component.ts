@@ -14,6 +14,7 @@ export class SearchComponent implements OnInit {
 
   results: any = [];
   showError: boolean = false;
+  modelValue: string = "";
   searchInput: string = "";
   
   subscription: any;
